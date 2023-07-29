@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;1,200&display=swap');
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: rgb(2,0,36);
+ /*background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,90,121,1) 47%, rgba(0,212,255,1) 100%);*/
+ /* background-image: url("./immages/2.jpg.jpg");*/
+ background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./immages/2.jpg.jpg');
+  background-repeat: no-repeat;
+  background-size: 100vw 900px;
+  color: #000;
+  font-family: Montserrat, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+
+.quote-container {
+  position:relative;
+  width: auto;
+  max-width: 900px;
+  height:400px;
+  padding: 20px 30px;
+  border-radius: 10px;
+  background-color: rgba(69, 89, 105, 0.404);
+
+  box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.quote-text {
+  
+  font-size: 1rem;
+  color:white;
+  font-family: Raleway;
+  margin-top: 60px;
+}
+
+.long-quote {
+  font-size: 2rem;
+}
+
+.fa-quote-left {
+  font-size: 2rem;
+}
+
+.quote-author {
+  margin-top: 25px;
+  margin-bottom:5px;
+  font-size: 1.4rem;
+  font-weight: 400;
+  font-style: italic;
+  color:#dce6eb;
+}
+
+.button-container {
+  margin-top: 50px;
+  position: absolute;
+  bottom: 15px;
+  right: 45px;
+  left:45px;
+  }
+
+button {
+  
+  font-family: Raleway;
+  cursor: pointer;
+  font-size: 1.2rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  background-color: #326c81d3;
+  outline: none;
+  padding: 0.5rem 1.8rem 0.5rem 1.8rem;
+  box-shadow: 0 0.3rem rgba(10, 42, 54, 0.29);
+}
+
+button:hover {
+  /*filter: brightness(110%);*/
+  background-color: rgb(2, 26, 29);
+}
+
+button:active {
+  transform: translate(0, 0.3rem);
+  box-shadow: 0 0.1rem rgba(22, 65, 77, 0.65);
+}
+
+.heart-button:hover {
+  color: #46a5c5;
+}
+
+.fa-heart-pulse{
+  font-size: 1.5rem;
+  
+}
+
+/* Loader */
+.loader {
+  border: 16px solid #f3f3f3;
+  border-top: 16px solid #333;
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Media Query: Tablet or Smaller */
+@media screen and (max-width: 1000px) {
+  .quote-container {
+    margin: auto 10px;
+  }
+
+  .quote-text {
+    font-size: 0.3rem;
+  }
+}
